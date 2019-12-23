@@ -1,0 +1,124 @@
+mkdir lab0
+cd lab0
+mkdir cloyster2
+cd cloyster2
+mkdir golduck frillish
+touch beautifly masquerain
+cd ..
+mkdir magmortar7
+cd magmortar7
+mkdir caterpie
+touch pansear shiftry rhyhorn drapion aggron
+cd ..
+mkdir totodile7
+cd totodile7
+mkdir claydol darmanitan zebstrika
+touch walrein vigoroth magcargo
+cd ..
+touch honchkrow8 lotad4 quagsire2
+echo "weigth=62.6 height=39.0 atk=7 def=5" > cloyster2/beautifly
+echo "weight=7.9\nheight=31.0 atk=6 def=6" > cloyster2/masquerain
+echo "Способности Dark Art Mach Speed\nInsomnia Super Luck" > honchkrow8
+echo "Мивет Freshwater" > lotad4
+echo "Тип диеты\nOmnivore" > magmortar7/pansear
+echo "Тип диеты Herbivore" > magmortar7/shiftry
+echo "Способности Landslide\nMountain Peak Lightning rod Rock Head" > magmortar7/rhyhorn
+echo "Ходы Aqua Tail Bite Bug\nBite Dark Pulse Fire Fury Cutter Ice Iron Tail Knock off\nMud-Slap Pin Rock climb sleep Talk Snore Thunder\nFang+" > magmortar7/drapion
+echo "Ходы Ancientpower Aqua Tail Avalanche Block Body SLam\nCounter Dark Pulse Defense Curl Dragon Pulse Dynamic punch Earth Power\nEndeavor Fire Punch Focus Punch Fury Cutter Ice Punch Icy Wind Iron\nDefense Iron Head Iron Tail Low Kick Magnet Rise Mega Kick Mega\nMud-Slap Outrage Rock climb Rollout Seismic Toss Shock Wave Sleep Tal\nSnore Spite Stealth Rock Superpower Thunder punch Uproar Water\nPulse" > magmortar7/aggron
+echo "weigth=165.3 height=55.0 atk=9 def=9" > quagsire2
+echo "Arctic Ocean Tundra" > totodile7/walrein
+echo "Тип покемона NORMAL\nNONE" > totodile7/vigoroth
+echo "Возможности Overland=3 Jump=1 Power=3 Intelligence=4\nEgg Warmer=0 Firestarter=0 Heater=0 Sinker=0" > totodile7/magcargo
+chmod 317 cloyster2
+cd cloyster2
+chmod 711 golduck
+chmod 400 beautifly
+chmod 622 masquerain
+chmod 355 frillish
+cd ..
+chmod 620 honchkrow8
+chmod 624 lotad4
+chmod 375 magmortar7
+cd magmortar7
+chmod 666 pansear
+chmod 444 shiftry
+chmod 700 caterpie
+chmod 600 rhyhorn
+chmod 004 drapion
+chmod 644 aggron
+cd ..
+chmod 444 quagsire2
+chmod 577 totodile7
+cd totodile7
+chmod 711 claydol
+chmod 066 walrein
+chmod 444 vigoroth
+chmod 440 magcargo
+chmod 524 darmanitan
+chmod 577 zebstrika
+cd ../..
+chmod -R u+rwx lab0
+cd lab0
+ln honchkrow8 magmortar7/rhyhornhonchkrow
+cat magmortar7/aggron cloyster2/masquerain >  quagsire2_16
+chmod 777 totodile7/zebstrika
+cp lotad4 totodile7/zebstrika
+chmod 777 magmortar7
+chmod 777 magmortar7/drapion
+cp -r magmortar7 totodile7/zebstrika
+ln -s  lotad4 cloyster2/masquerainlotad
+ln -s cloyster2 Copy_35
+cat honchkrow8 > magmortar7/pansearhonchkrow
+cd ..
+echo "List"
+ls -lR lab0
+wc -m lab0/*/* lab0/* | grep d* | sort -nk 5 2>/tmp/task_err
+grep -h -n '^m' lab0/ | sort -t: -k2d
+cd lab0
+ls -lR magmortar7 | sort 2>/tmp/task_err
+
+cd cloyster2
+ls -l | sort -n -k 2
+cd ../..
+
+grep -h -n '^d' lab0/ | sort -t: -k2dr 2>/tmp/task_err
+
+cd lab0
+rm honchkrow8
+rm totodile7/vigoroth
+rm Copy_*
+rm magmortar7/rhyhornhonchkr*
+chmod 777 magmortar7/drapion
+chmod 777 magmortar7/shiftry
+rm -r magmortar7
+chmod 777 totodile7/zebstrika/magmortar7/shiftry
+rm -r totodile7/zebstrika
+chmod 317 cloyster2
+cd cloyster2
+chmod 711 golduck
+chmod 400 beautifly
+chmod 622 masquerain
+chmod 355 frillish
+cd ..
+chmod 620 honchkrow8
+chmod 624 lotad4
+chmod 375 magmortar7
+cd magmortar7
+chmod 666 pansear
+chmod 444 shiftry
+chmod 700 caterpie
+chmod 600 rhyhorn
+chmod 004 drapion
+chmod 644 aggron
+cd ..
+chmod 444 quagsire2
+chmod 577 totodile7
+cd totodile7
+chmod 711 claydol
+chmod 066 walrein
+chmod 444 vigoroth
+chmod 440 magcargo
+chmod 524 darmanitan
+chmod 577 zebstrika
+cd ..
+
